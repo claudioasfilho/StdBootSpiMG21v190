@@ -1,0 +1,71 @@
+#ISD afv6
+# Simplicity Studio version: 5.8.5.201906251613-1497
+
+# Application configuration
+stackId: com.silabs.sdk.stack.super
+stackRoot: /Users/clfilho/projects/Simplicity Studio 04-19/Simplicity Studio.app/Contents/Eclipse/developer/sdks/gecko_sdk_suite/v2.6
+appId: bootloader
+frameworkRoot: platform/bootloader
+architecture: efr32~family[M]~series[2]~device_configuration[1]~performance[A]~radio[010]~flash[1024K]~temp[I]~package[M]~pins[32]~!module+BRD4181A+gcc
+exactArchitectureToolchain: com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:7.2.1.20170904
+deviceName: StdBootSpiMG21v190
+sourceSampleAppId: bootloader-spi-ezsp
+generationDirectory: PATH(ISC_RELATIVE):.
+
+# Devices
+
+# Plugin configuration
+appPlugin: bgapi-uart-dfu=false
+appPlugin: core=true
+appPlugin: crc=true
+appPlugin: crypto=true
+appPlugin: debug=false
+appPlugin: delay-driver=true
+appPlugin: emlib=true
+appPlugin: ezsp-spi=true
+appPlugin: gbl-compression-lz4=false
+appPlugin: gbl-compression-lzma=false
+appPlugin: gpio-activation=true
+appPlugin: internal_flash=false
+appPlugin: mbedtls=true
+appPlugin: parser=true
+appPlugin: parser-eblv2=false
+appPlugin: parser-noenc=false
+appPlugin: spi-driver=false
+appPlugin: spiflash=false
+appPlugin: spislave-driver=true
+appPlugin: storage-common=false
+appPlugin: storage-common-single=false
+appPlugin: token-management=true
+appPlugin: uart-driver=false
+appPlugin: upgrade-version=false
+appPlugin: xmodem-parser=true
+appPlugin: xmodem-uart=false
+
+# Setup configurations
+{setupId:additionalFiles
+}
+{setupId:bootloaderStorage
+}
+{setupId:callbackConfiguration
+}
+{setupId:hwConfig
+lastArchitectureId=efr32~family[M]~series[2]~device_configuration[1]~performance[A]~radio[010]~flash[1024K]~temp[I]~package[M]~pins[32]~!module+BRD4181A+gcc
+featureLevel=1
+active=true
+lastHwConfFileUsed=PATH(ISC_RELATIVE):brd4181a_efr32mg21a010f1024im32.hwconf
+}
+{setupId:information
+\{key:description
+
+\}
+}
+{setupId:macros
+}
+{setupId:quizz
+}
+{setupId:template
+--version:2
+}
+
+# Plugin options
